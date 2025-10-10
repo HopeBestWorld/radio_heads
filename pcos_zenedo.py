@@ -10,7 +10,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import openpyxl
 import numpy as np
-from sklearn.metrics import classification_report, confusion_matrix, precision_score, recall_score, f1_score, roc_auc_score
+from sklearn.preprocessing import label_binarize
+from sklearn.metrics import (classification_report, confusion_matrix,
+                             precision_score, recall_score, f1_score,
+                             roc_auc_score, precision_recall_curve, auc)
 
 # -------------------------
 # Device
@@ -196,35 +199,48 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 # Evaluation Metrics
 # -------------------------
 def evaluate_model(model, val_loader):
+    """
+    Evaluates the model and returns predictions, probabilities, and PR-AUC.
+    """
     model.eval()
-    y_true, y_pred, y_probs = [], [], []
+    y_true, y_pred, y_probs_list = [], [], []
 
     with torch.no_grad():
         for inputs, labels in val_loader:
             inputs, labels = inputs.to(device), labels.to(device)
             outputs = model(inputs)
-            probs = nn.functional.softmax(outputs, dim=1)[:, 1]
+            probs = nn.functional.softmax(outputs, dim=1)  # keep all class probabilities
             _, predicted = torch.max(outputs, 1)
+
             y_true.extend(labels.cpu().numpy())
             y_pred.extend(predicted.cpu().numpy())
-            y_probs.extend(probs.cpu().numpy())
+            y_probs_list.append(probs.cpu().numpy())
 
     y_true = np.array(y_true)
     y_pred = np.array(y_pred)
-    y_probs = np.array(y_probs)
+    y_probs = np.vstack(y_probs_list)  # shape [n_samples, n_classes]
 
+    # Basic classification metrics
     acc = (y_true == y_pred).mean()
-    precision = precision_score(y_true, y_pred, zero_division=0)
-    recall = recall_score(y_true, y_pred, zero_division=0)
-    f1 = f1_score(y_true, y_pred, zero_division=0)
-    auc = roc_auc_score(y_true, y_probs) if len(np.unique(y_true)) > 1 else 0.0
+    precision = precision_score(y_true, y_pred, average='macro', zero_division=0)
+    recall = recall_score(y_true, y_pred, average='macro', zero_division=0)
+    f1 = f1_score(y_true, y_pred, average='macro', zero_division=0)
 
-    # per-class metrics
     per_class_precision = precision_score(y_true, y_pred, average=None, zero_division=0)
     per_class_recall = recall_score(y_true, y_pred, average=None, zero_division=0)
     per_class_f1 = f1_score(y_true, y_pred, average=None, zero_division=0)
 
-    return acc, precision, recall, f1, auc, y_true, y_pred, per_class_precision, per_class_recall, per_class_f1
+    # PR-AUC (binary, for positive class "Visible")
+    if y_probs.ndim == 2 and y_probs.shape[1] == 2:
+        pos_prob = y_probs[:, 1]  # probability of class 1
+        precision_curve, recall_curve, _ = precision_recall_curve(y_true, pos_prob)
+        pr_auc_score = auc(recall_curve, precision_curve)
+    else:
+        pr_auc_score = 0.0
+
+    return (acc, precision, recall, f1, pr_auc_score, 
+            y_true, y_pred, y_probs, 
+            per_class_precision, per_class_recall, per_class_f1)
 
 # -------------------------
 # Training Loop with Early Stopping
@@ -259,7 +275,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, num_epoch
         train_acc = correct / total
         train_acc_list.append(train_acc)
 
-        val_acc, val_prec, val_recall, val_f1, val_auc, _, _, _, _, _ = evaluate_model(model, val_loader)
+        val_acc, val_prec, val_recall, val_f1, val_auc, _, _, _, _, _, _ = evaluate_model(model, val_loader)
         val_acc_list.append(val_acc)
 
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {train_loss:.4f}, '
@@ -278,7 +294,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, num_epoch
                 print(f"⏹ Early stopping triggered after {patience} epochs without improvement.")
                 break
 
-    # Plot and save accuracy curve
+    # Plot accuracy curve
     plt.figure(figsize=(8, 6))
     plt.plot(train_acc_list, label='Train Accuracy')
     plt.plot(val_acc_list, label='Validation Accuracy')
@@ -300,7 +316,7 @@ train_model(model, train_loader, test_loader, criterion, optimizer, num_epochs=5
 # -------------------------
 model.load_state_dict(torch.load('best_model.pkl'))
 model.eval()
-val_acc, val_prec, val_recall, val_f1, val_auc, y_true, y_pred, per_class_precision, per_class_recall, per_class_f1 = evaluate_model(model, test_loader)
+val_acc, val_prec, val_recall, val_f1, val_auc, y_true, y_pred, y_probs, per_class_precision, per_class_recall, per_class_f1 = evaluate_model(model, test_loader)
 
 print("\n✅ Final Test Metrics:")
 print(f"Accuracy: {val_acc:.4f}")
@@ -348,5 +364,121 @@ def plot_metrics(per_class_precision, per_class_recall, per_class_f1, class_name
     plt.savefig(filename, dpi=300, bbox_inches='tight')
     plt.show()
 
-# Plot grouped bar chart
 plot_metrics(per_class_precision, per_class_recall, per_class_f1, class_names=["Not Visible", "Visible"])
+
+# -------------------------
+# Precision-Recall Curve
+# -------------------------
+def plot_precision_recall(y_true, y_probs, class_names=None, filename="precision_recall_curve.png"):
+    y_true = np.array(y_true)
+    y_probs = np.array(y_probs)
+
+    if y_probs.ndim == 2 and y_probs.shape[1] == 2:
+        # Binary classification: take the probability of class 1 (positive)
+        pos_prob = y_probs[:, 1]
+    else:
+        pos_prob = y_probs  # already shape [n_samples]
+
+    if class_names is None:
+        class_names = ["Not Visible", "Visible"]
+
+    precision, recall, _ = precision_recall_curve(y_true, pos_prob)
+    pr_auc = auc(recall, precision)
+
+    plt.figure(figsize=(8, 6))
+    plt.plot(recall, precision, lw=2, label=f'{class_names[1]} (AUC={pr_auc:.4f})')
+    plt.xlabel('Recall')
+    plt.ylabel('Precision')
+    plt.title('Precision-Recall Curve')
+    plt.legend()
+    plt.grid(True)
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.show()
+
+plot_precision_recall(y_true, y_probs, class_names=["Not Visible", "Visible"])
+
+# -------------------------
+# Grad-CAM
+# -------------------------
+class GradCAM:
+    def __init__(self, model, target_layer):
+        self.model = model
+        self.target_layer = target_layer
+        self.gradients = None
+        self.activations = None
+        self.hook_layers()
+
+    def hook_layers(self):
+        def forward_hook(module, input, output):
+            self.activations = output.detach()
+        def backward_hook(module, grad_in, grad_out):
+            self.gradients = grad_out[0].detach()
+        self.target_layer.register_forward_hook(forward_hook)
+        self.target_layer.register_backward_hook(backward_hook)
+
+    def generate_cam(self, input_tensor, target_class=None):
+        self.model.zero_grad()
+        output = self.model(input_tensor.to(device))
+        if target_class is None:
+            target_class = output.argmax(dim=1).item()
+        loss = output[0, target_class]
+        loss.backward()
+
+        # Compute weights
+        weights = self.gradients.mean(dim=(2, 3), keepdim=True)
+        cam = (weights * self.activations).sum(dim=1, keepdim=True)
+        cam = nn.functional.relu(cam)
+        cam = nn.functional.interpolate(cam, size=(224, 224), mode='bilinear', align_corners=False)
+        cam = cam.squeeze().cpu().numpy()
+        cam = (cam - cam.min()) / (cam.max() - cam.min() + 1e-8)  # normalize
+        return cam
+
+def show_gradcam(img, cam, title="Grad-CAM", filename="gradcam.png"):
+    img_np = img.permute(1, 2, 0).numpy()
+    img_np = np.clip(img_np * [0.229, 0.224, 0.225] + [0.485, 0.456, 0.406], 0, 1)
+
+    plt.figure(figsize=(6,6))
+    plt.imshow(img_np)
+    plt.imshow(cam, cmap='jet', alpha=0.5)
+    plt.title(title)
+    plt.axis('off')
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.show()
+
+# -------------------------
+# Example Usage
+# -------------------------
+# Pick an image from the test dataset
+sample_img, sample_label = test_dataset[0]
+input_tensor = sample_img.unsqueeze(0).to(device)
+
+# Initialize Grad-CAM with the last convolutional layer
+grad_cam = GradCAM(model, model.layer4)
+
+# Generate CAM for the positive class (Visible)
+cam = grad_cam.generate_cam(input_tensor, target_class=1)
+
+# Display Grad-CAM overlay
+show_gradcam(sample_img, cam, title=f"Grad-CAM - True Label: {'Visible' if sample_label==1 else 'Not Visible'}")
+
+# -------------------------
+# Generate Grad-CAM for all False Negatives
+# -------------------------
+def gradcam_false_negatives(model, dataset, y_true, y_pred, target_layer, save_dir="gradcam_false_negatives"):
+    import os
+    os.makedirs(save_dir, exist_ok=True)
+    
+    grad_cam = GradCAM(model, target_layer)
+    
+    for idx, (true_label, pred_label) in enumerate(zip(y_true, y_pred)):
+        if true_label == 1 and pred_label == 0:  # False Negative
+            img, _ = dataset[idx]
+            input_tensor = img.unsqueeze(0).to(device)
+            cam = grad_cam.generate_cam(input_tensor, target_class=1)  # positive class
+            
+            filename = os.path.join(save_dir, f"fn_{idx}.png")
+            show_gradcam(img, cam, title=f"Grad-CAM False Negative #{idx}", filename=filename)
+            print(f"Saved Grad-CAM for False Negative #{idx} -> {filename}")
+
+# Example usage after evaluation
+gradcam_false_negatives(model, test_dataset, y_true, y_pred, target_layer=model.layer4)
