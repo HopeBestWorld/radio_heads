@@ -98,7 +98,7 @@ train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
 
 # -------------------------
-# Visualization functions with automatic saving
+# Visualization functions
 # -------------------------
 def plot_class_distribution(dataset, title="Class Distribution", filename="class_distribution.png"):
     labels = [dataset[i][1] for i in range(len(dataset))]
@@ -219,7 +219,12 @@ def evaluate_model(model, val_loader):
     f1 = f1_score(y_true, y_pred, zero_division=0)
     auc = roc_auc_score(y_true, y_probs) if len(np.unique(y_true)) > 1 else 0.0
 
-    return acc, precision, recall, f1, auc, y_true, y_pred
+    # per-class metrics
+    per_class_precision = precision_score(y_true, y_pred, average=None, zero_division=0)
+    per_class_recall = recall_score(y_true, y_pred, average=None, zero_division=0)
+    per_class_f1 = f1_score(y_true, y_pred, average=None, zero_division=0)
+
+    return acc, precision, recall, f1, auc, y_true, y_pred, per_class_precision, per_class_recall, per_class_f1
 
 # -------------------------
 # Training Loop with Early Stopping
@@ -254,7 +259,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, num_epoch
         train_acc = correct / total
         train_acc_list.append(train_acc)
 
-        val_acc, val_prec, val_recall, val_f1, val_auc, _, _ = evaluate_model(model, val_loader)
+        val_acc, val_prec, val_recall, val_f1, val_auc, _, _, _, _, _ = evaluate_model(model, val_loader)
         val_acc_list.append(val_acc)
 
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {train_loss:.4f}, '
@@ -295,7 +300,7 @@ train_model(model, train_loader, test_loader, criterion, optimizer, num_epochs=5
 # -------------------------
 model.load_state_dict(torch.load('best_model.pkl'))
 model.eval()
-val_acc, val_prec, val_recall, val_f1, val_auc, y_true, y_pred = evaluate_model(model, test_loader)
+val_acc, val_prec, val_recall, val_f1, val_auc, y_true, y_pred, per_class_precision, per_class_recall, per_class_f1 = evaluate_model(model, test_loader)
 
 print("\n✅ Final Test Metrics:")
 print(f"Accuracy: {val_acc:.4f}")
@@ -317,3 +322,31 @@ plt.ylabel("True")
 plt.title("Confusion Matrix")
 plt.savefig("confusion_matrix.png", dpi=300, bbox_inches='tight')
 plt.show()
+
+# -------------------------
+# Grouped bar chart for precision, recall, F1
+# -------------------------
+def plot_metrics(per_class_precision, per_class_recall, per_class_f1, class_names=["Not Visible", "Visible"], filename="metrics_per_class.png"):
+    x = np.arange(len(class_names))
+    width = 0.25
+
+    plt.figure(figsize=(8, 6))
+    plt.bar(x - width, per_class_precision, width, label='Precision')
+    plt.bar(x, per_class_recall, width, label='Recall')
+    plt.bar(x + width, per_class_f1, width, label='F1-score')
+
+    plt.xticks(x, class_names)
+    plt.ylim(0, 1)
+    plt.ylabel("Score")
+    plt.title("Precision, Recall, F1 per Class")
+    plt.legend()
+    for i in range(len(class_names)):
+        plt.text(i - width, per_class_precision[i]+0.02, f"{per_class_precision[i]:.2f}", ha='center')
+        plt.text(i, per_class_recall[i]+0.02, f"{per_class_recall[i]:.2f}", ha='center')
+        plt.text(i + width, per_class_f1[i]+0.02, f"{per_class_f1[i]:.2f}", ha='center')
+
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.show()
+
+# Plot grouped bar chart
+plot_metrics(per_class_precision, per_class_recall, per_class_f1, class_names=["Not Visible", "Visible"])
