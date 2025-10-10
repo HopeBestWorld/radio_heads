@@ -91,8 +91,41 @@ test_transforms = transforms.Compose([
 train_dataset = ExcelLabelDataset(train_excel, train_dir, transform=train_transforms)
 test_dataset = ExcelLabelDataset(test_excel, test_dir, transform=test_transforms)
 
+print(f"Number of training images: {len(train_dataset)}")
+print(f"Number of testing images: {len(test_dataset)}")
+
 train_loader = DataLoader(train_dataset, batch_size=64, shuffle=True)
 test_loader = DataLoader(test_dataset, batch_size=64, shuffle=False)
+
+# -------------------------
+# Visualization functions with automatic saving
+# -------------------------
+def plot_class_distribution(dataset, title="Class Distribution", filename="class_distribution.png"):
+    labels = [dataset[i][1] for i in range(len(dataset))]
+    plt.figure(figsize=(6, 4))
+    sns.countplot(x=labels)
+    plt.xticks([0, 1], ['Not Visible', 'Visible'])
+    plt.title(title)
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.show()
+
+def show_samples(dataset, num_samples=4, filename="sample_images.png"):
+    fig, axes = plt.subplots(1, num_samples, figsize=(15, 5))
+    indices = np.random.choice(len(dataset), num_samples, replace=False)
+    for ax, idx in zip(axes, indices):
+        img, label = dataset[idx]
+        img_np = img.permute(1, 2, 0).numpy()
+        img_np = np.clip(img_np * [0.229, 0.224, 0.225] + [0.485, 0.456, 0.406], 0, 1)
+        ax.imshow(img_np)
+        ax.set_title("Visible" if label == 1 else "Not Visible")
+        ax.axis('off')
+    plt.savefig(filename, dpi=300, bbox_inches='tight')
+    plt.show()
+
+# Visualizations
+plot_class_distribution(train_dataset, title="Training Set Class Distribution", filename="train_class_distribution.png")
+plot_class_distribution(test_dataset, title="Testing Set Class Distribution", filename="test_class_distribution.png")
+show_samples(train_dataset, num_samples=6, filename="train_sample_images.png")
 
 # -------------------------
 # Model
@@ -255,16 +288,14 @@ print(f"AUC: {val_auc:.4f}")
 print("\nClassification Report:")
 print(classification_report(y_true, y_pred, target_names=["not visible", "visible"]))
 
-# Confusion matrix
+# -------------------------
+# Confusion Matrix
+# -------------------------
 cm = confusion_matrix(y_true, y_pred)
 plt.figure(figsize=(8, 6))
 sns.heatmap(cm, annot=True, fmt='d', xticklabels=["not visible", "visible"], yticklabels=["not visible", "visible"])
 plt.xlabel("Predicted")
 plt.ylabel("True")
 plt.title("Confusion Matrix")
-plt.show()
-
 plt.savefig("confusion_matrix.png", dpi=300, bbox_inches='tight')
-
-# Show the plot
 plt.show()
