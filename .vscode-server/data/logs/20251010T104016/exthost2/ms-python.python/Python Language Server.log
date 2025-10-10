@@ -1,0 +1,40 @@
+2025-10-10 10:42:27.232 [info] (Client) Pylance client (2025.8.3) started with python extension (2025.16.0)
+2025-10-10 10:42:27.292 [info] (2864966) Server root directory: file:///home/radio_heads/.vscode-server/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-10 10:42:27.293 [info] (2864966) Pylance language server 2025.8.3 (pyright version 1.1.405, commit d64f3fa0) starting
+2025-10-10 10:42:27.293 [info] (2864966) Starting service instance "radio_heads" for workspace "/home/radio_heads"
+2025-10-10 10:42:27.397 [info] (2864966) Starting Mcp server id:4180 ...
+2025-10-10 10:42:27.427 [info] (2864966) Setting environmentName for service "radio_heads": "radio_env (3.12.10)"
+2025-10-10 10:42:27.427 [info] (2864966) Setting pythonPath for service "radio_heads": "/home/radio_heads/radio_env/bin/python"
+2025-10-10 10:42:27.427 [info] (2864966) No include entries specified; assuming /home/radio_heads
+2025-10-10 10:42:27.428 [info] (2864966) Auto-excluding **/node_modules
+2025-10-10 10:42:27.428 [info] (2864966) Auto-excluding **/__pycache__
+2025-10-10 10:42:27.428 [info] (2864966) Auto-excluding **/.*
+2025-10-10 10:42:27.471 [info] (2864966) Assuming Python version 3.12.10.final.0
+2025-10-10 10:42:27.554 [info] (2864966) Settings have not changed. Skipping update.
+2025-10-10 10:42:27.556 [info] (2864966) Settings have not changed. Skipping update.
+2025-10-10 10:42:27.557 [info] (2864966) Settings have not changed. Skipping update.
+2025-10-10 10:42:27.567 [info] (2864966) Auto-excluding /home/radio_heads/radio_env
+2025-10-10 10:42:27.592 [info] (2864966) No source files found.
+2025-10-10 10:42:27.595 [info] (2864966) Settings have not changed. Skipping update.
+2025-10-10 10:42:27.980 [info] (2864966) BG: Priority queue background worker(2) root directory: file:///home/radio_heads/.vscode-server/extensions/ms-python.vscode-pylance-2025.8.3/dist
+2025-10-10 10:42:27.980 [info] (2864966) BG: Priority queue background worker(2) started
+2025-10-10 10:42:28.137 [info] (2864966) BG: Indexer background runner(3) root directory: file:///home/radio_heads/.vscode-server/extensions/ms-python.vscode-pylance-2025.8.3/dist (index)
+2025-10-10 10:42:28.142 [info] (2864966) BG: Indexing(3) started
+2025-10-10 10:42:28.702 [info] (2864966) Settings have not changed. Skipping update.
+2025-10-10 10:42:28.814 [info] (2864966) BG: scanned(3) 1095 files over 1 exec env
+2025-10-10 10:42:34.208 [info] (2864966) BG: [IDX(3)] Long operation: index execution environment file:///home/radio_heads (5210ms)
+2025-10-10 10:42:34.240 [info] (2864966) BG: [IDX(3)] Long operation: index packages file:///home/radio_heads (5252ms)
+2025-10-10 10:42:34.240 [info] (2864966) BG: indexed(3) 1095 files over 1 exec env
+2025-10-10 10:42:34.586 [info] (2864966) BG: Indexing finished(3).
+2025-10-10 10:53:06.813 [info] (2864966) Auto-excluding /home/radio_heads/radio_env
+2025-10-10 10:53:06.834 [info] (2864966) Found 1 source file
+2025-10-10 11:11:28.500 [info] (2864966) Auto-excluding /home/radio_heads/radio_env
+2025-10-10 11:11:28.523 [info] (2864966) Found 1 source file
+2025-10-10 11:11:33.970 [info] (2864966) BG: Indexer background runner(4) root directory: file:///home/radio_heads/.vscode-server/extensions/ms-python.vscode-pylance-2025.8.3/dist (refresh)
+2025-10-10 11:11:33.970 [info] (2864966) BG: Indexing(4) started
+2025-10-10 11:11:34.521 [info] (2864966) BG: scanned(4) 1095 files over 1 exec env
+2025-10-10 11:11:35.752 [info] (2864966) BG: indexed(4) 1095 files over 1 exec env
+2025-10-10 11:11:35.943 [info] (2864966) BG: Indexing finished(4).
+2025-10-10 11:59:14.076 [info] (2864966) Auto-excluding /home/radio_heads/radio_env
+2025-10-10 11:59:14.108 [info] (2864966) Found 1 source file
+2025-10-10 12:04:28.255 [info] (2864966) Settings have not changed. Skipping update.

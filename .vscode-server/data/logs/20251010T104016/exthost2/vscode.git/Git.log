@@ -1,0 +1,200 @@
+2025-10-10 10:41:08.644 [info] [main] Log level: Info
+2025-10-10 10:41:08.644 [info] [main] Validating found git in: "git"
+2025-10-10 10:41:08.644 [info] [main] Using git "2.43.0" from "git"
+2025-10-10 10:41:08.644 [info] [Model][doInitialScan] Initial repository scan started
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [0ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [5ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] > git rev-parse --show-toplevel [2ms]
+2025-10-10 10:41:08.644 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:41:08.644 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-10-10 10:41:26.218 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:41:26.218 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:42:21.187 [info] > git rev-parse --show-toplevel [13ms]
+2025-10-10 10:42:21.187 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:42:21.633 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/radio_heads/.vscode-server/extensions/.6198be72-f557-4352-9240-91b75137506c/". Error:Error: ENOENT: no such file or directory, realpath '/home/radio_heads/.vscode-server/extensions/.6198be72-f557-4352-9240-91b75137506c/'
+2025-10-10 10:42:21.642 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/radio_heads/.vscode-server/extensions/.4961fc89-04f1-4000-9bb5-0012c7bc4387/". Error:Error: ENOENT: no such file or directory, realpath '/home/radio_heads/.vscode-server/extensions/.4961fc89-04f1-4000-9bb5-0012c7bc4387/'
+2025-10-10 10:42:22.700 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/radio_heads/.vscode-server/extensions/.55f073b7-8706-472d-9b87-4bc645df7f6b/bundled/libs/debugpy/_vendored/pydevd/_pydevd_frame_eval/". Error:Error: ENOENT: no such file or directory, realpath '/home/radio_heads/.vscode-server/extensions/.55f073b7-8706-472d-9b87-4bc645df7f6b/bundled/libs/debugpy/_vendored/pydevd/_pydevd_frame_eval/'
+2025-10-10 10:42:22.743 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/radio_heads/.vscode-server/extensions/.55f073b7-8706-472d-9b87-4bc645df7f6b/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/". Error:Error: ENOENT: no such file or directory, realpath '/home/radio_heads/.vscode-server/extensions/.55f073b7-8706-472d-9b87-4bc645df7f6b/bundled/libs/debugpy/_vendored/pydevd/pydevd_attach_to_process/linux_and_mac/'
+2025-10-10 10:42:23.657 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:42:23.657 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:42:23.897 [info] > git rev-parse --show-toplevel [20ms]
+2025-10-10 10:42:23.897 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:42:27.770 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:42:27.770 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:42:28.694 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:42:28.694 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:53:06.552 [info] > git rev-parse --show-toplevel [2ms]
+2025-10-10 10:53:06.552 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:55:18.886 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 10:55:18.886 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 10:55:20.221 [info] > git rev-parse --show-toplevel [2ms]
+2025-10-10 10:55:20.221 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:02:34.333 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 11:02:34.333 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:02:41.657 [info] > git rev-parse --show-toplevel [3ms]
+2025-10-10 11:02:41.657 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:08:41.737 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 11:08:41.737 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:10:10.914 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 11:10:10.914 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:14:15.325 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 11:14:15.325 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:18:58.270 [info] > git rev-parse --show-toplevel [2ms]
+2025-10-10 11:18:58.270 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:58:26.970 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 11:58:26.970 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:58:52.692 [info] > git rev-parse --show-toplevel [1ms]
+2025-10-10 11:58:52.692 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 11:59:14.201 [info] > git rev-parse --show-toplevel [5ms]
+2025-10-10 11:59:14.201 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-10-10 12:03:55.198 [info] > git rev-parse --show-toplevel [2ms]
+2025-10-10 12:03:55.234 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [21ms]
+2025-10-10 12:03:55.256 [info] [Model][openRepository] Opened repository (path): /home/radio_heads
+2025-10-10 12:03:55.256 [info] [Model][openRepository] Opened repository (real path): /home/radio_heads
+2025-10-10 12:03:55.256 [info] [Model][openRepository] Opened repository (kind): repository
+2025-10-10 12:03:55.270 [info] > git fetch [14ms]
+2025-10-10 12:03:55.290 [info] [Git][getRemotes] No remotes found in the git config file
+2025-10-10 12:03:55.292 [info] > git config --get commit.template [22ms]
+2025-10-10 12:03:55.292 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-10-10 12:03:55.292 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:03:55.305 [info] > git config --get commit.template [26ms]
+2025-10-10 12:03:55.315 [info] [Git][getRemotes] No remotes found in the git config file
+2025-10-10 12:03:55.326 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [22ms]
+2025-10-10 12:03:55.326 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:03:55.326 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for master: Error: No such branch: master.
+2025-10-10 12:03:55.327 [info] > git config --get commit.template [1ms]
+2025-10-10 12:03:55.327 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2025-10-10 12:03:55.327 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:03:55.337 [info] [Git][getRemotes] No remotes found in the git config file
+2025-10-10 12:03:55.339 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-10-10 12:03:55.339 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:03:55.359 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-10-10 12:03:55.730 [info] > git status -z -uall [382ms] (cancelled)
+2025-10-10 12:03:55.742 [info] [Git][getRemotes] No remotes found in the git config file
+2025-10-10 12:03:55.742 [info] > git config --get commit.template [13ms]
+2025-10-10 12:03:55.743 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-10-10 12:03:55.743 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:03:56.742 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [979ms]
+2025-10-10 12:03:56.773 [info] > git check-ignore -v -z --stdin [10ms]
+2025-10-10 12:03:56.872 [info] > git status -z -uall [1119ms] (cancelled)
+2025-10-10 12:03:58.568 [info] > git show --textconv :pcos_zenedo.py [16ms]
+2025-10-10 12:03:58.580 [info] > git ls-files --stage -- pcos_zenedo.py [13ms]
+2025-10-10 12:03:58.590 [info] > git hash-object -t tree /dev/null [11ms]
+2025-10-10 12:03:58.590 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/radio_heads/pcos_zenedo.py.git?%7B%22path%22%3A%22%2Fhome%2Fradio_heads%2Fpcos_zenedo.py%22%2C%22ref%22%3A%22%22%7D
+2025-10-10 12:03:58.591 [info] > git hash-object -t tree /dev/null [1ms]
+2025-10-10 12:03:58.591 [warning] [GitFileSystemProvider][stat] File not found - git:/home/radio_heads/pcos_zenedo.py.git?%7B%22path%22%3A%22%2Fhome%2Fradio_heads%2Fpcos_zenedo.py%22%2C%22ref%22%3A%22%22%7D
+2025-10-10 12:04:28.234 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [22ms]
+2025-10-10 12:04:28.234 [info] fatal: bad revision 'refs/heads/master'
+2025-10-10 12:04:28.234 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/master"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/master'\n"
+}
+2025-10-10 12:04:28.734 [info] > git check-ignore -v -z --stdin [2ms]
+2025-10-10 12:04:29.341 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [1ms]
+2025-10-10 12:04:29.341 [info] fatal: bad revision 'refs/heads/master'
+2025-10-10 12:04:29.341 [error] [GitHistoryProvider][provideHistoryItems] Failed to get history items with options '{"historyItemRefs":["refs/heads/master"],"limit":50,"skip":0}': Failed to execute git {
+  "exitCode": 128,
+  "gitCommand": "log",
+  "stdout": "",
+  "stderr": "fatal: bad revision 'refs/heads/master'\n"
+}
+2025-10-10 12:05:26.532 [info] > git check-ignore -v -z --stdin [3ms]
+2025-10-10 12:06:20.919 [info] > git check-ignore -v -z --stdin [1ms]
+2025-10-10 12:06:55.811 [info] > git fetch [458ms]
+2025-10-10 12:06:55.812 [info] Missing or invalid credentials.
+Skip silent fetch commands
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+2025-10-10 12:06:55.841 [info] > git config --get commit.template [3ms]
+2025-10-10 12:06:55.857 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-10-10 12:06:55.857 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:06:55.882 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-10-10 12:06:56.228 [info] > git status -z -uall [361ms] (cancelled)
+2025-10-10 12:09:56.917 [info] > git fetch [676ms]
+2025-10-10 12:09:56.917 [info] git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+2025-10-10 12:09:56.937 [info] > git config --get commit.template [9ms]
+2025-10-10 12:09:56.938 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-10-10 12:09:56.938 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:09:56.955 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-10-10 12:09:57.251 [info] > git status -z -uall [304ms] (cancelled)
+2025-10-10 12:14:44.550 [info] > git fetch [6570ms]
+2025-10-10 12:14:44.550 [info] From github.com:HopeBestWorld/RadioHeads
+ * [new branch]      main       -> origin/main
+2025-10-10 12:14:44.576 [info] > git config --get commit.template [10ms]
+2025-10-10 12:14:44.576 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-10-10 12:14:44.576 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:14:44.593 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-10-10 12:14:44.872 [info] > git status -z -uall [288ms] (cancelled)
+2025-10-10 12:15:25.027 [info] > git config --get commit.template [11ms]
+2025-10-10 12:15:25.027 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-10-10 12:15:25.028 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:15:25.046 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-10-10 12:15:25.328 [info] > git status -z -uall [292ms] (cancelled)
+2025-10-10 12:16:52.190 [info] > git config --get commit.template [1ms]
+2025-10-10 12:16:52.200 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-10-10 12:16:52.200 [warning] [Git][getBranch] No such branch: master
+2025-10-10 12:16:52.216 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-10-10 12:16:52.491 [info] > git status -z -uall [283ms] (cancelled)
+2025-10-10 12:16:59.247 [info] > git config --get commit.template [11ms]
+2025-10-10 12:16:59.247 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-10-10 12:16:59.264 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-10-10 12:16:59.552 [info] > git status -z -uall [295ms] (cancelled)
+2025-10-10 12:16:59.552 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-10-10 12:16:59.561 [info] > git config --get --local branch.main.vscode-merge-base [1ms]
+2025-10-10 12:16:59.561 [warning] [Git][config] git config failed: Failed to execute git
+2025-10-10 12:16:59.570 [info] > git reflog main --grep-reflog=branch: Created from *. [1ms]
+2025-10-10 12:16:59.578 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [1ms]
+2025-10-10 12:16:59.587 [info] > git config --add --local branch.main.vscode-merge-base origin/main [1ms]
+2025-10-10 12:16:59.603 [info] > git config --get commit.template [8ms]
+2025-10-10 12:16:59.603 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-10-10 12:17:00.302 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [684ms]
+2025-10-10 12:17:00.379 [info] > git status -z -uall [768ms] (cancelled)
+2025-10-10 12:17:00.379 [info] > git merge-base refs/heads/main refs/remotes/origin/main [11ms]
+2025-10-10 12:17:00.398 [info] > git merge-base refs/heads/main refs/remotes/origin/main [19ms]
+2025-10-10 12:17:00.410 [info] > git blame --root --incremental 7c8d1d7392a86ab2d8bb3db865ddd2e2fd8b4c43 -- pcos_zenedo.py [12ms]
+2025-10-10 12:17:00.410 [info] fatal: no such path pcos_zenedo.py in 7c8d1d7392a86ab2d8bb3db865ddd2e2fd8b4c43
+2025-10-10 12:17:00.410 [info] > git diff --name-status -z --diff-filter=ADMR 7c8d1d7392a86ab2d8bb3db865ddd2e2fd8b4c43...refs/remotes/origin/main [22ms]
+2025-10-10 12:17:00.411 [info] > git diff --name-status -z --diff-filter=ADMR 7c8d1d7392a86ab2d8bb3db865ddd2e2fd8b4c43...refs/remotes/origin/main [5ms]
+2025-10-10 12:17:13.061 [info] > git check-ignore -v -z --stdin [1ms]
+2025-10-10 12:17:22.658 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname)%00%(parent)%00%(*parent)%00%(authorname)%00%(*authorname)%00%(committerdate:unix)%00%(*committerdate:unix)%00%(subject)%00%(*subject)%00%(upstream:track) [1ms]
+2025-10-10 12:17:36.992 [info] > git check-ignore -v -z --stdin [1ms]
+2025-10-10 12:17:46.241 [info] > git fetch [1355ms]
+2025-10-10 12:17:46.255 [info] > git config --get commit.template [2ms]
+2025-10-10 12:17:46.266 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-10-10 12:17:46.284 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-10-10 12:17:46.556 [info] > git status -z -uall [281ms] (cancelled)

@@ -1,0 +1,90 @@
+2025-10-10 10:40:16.755 [info] 
+
+
+
+
+2025-10-10 10:40:16.755 [info] Extension host agent started.
+2025-10-10 10:40:16.763 [info] Started initializing default profile extensions in extensions installation folder. file:///home/radio_heads/.vscode-server/extensions
+2025-10-10 10:40:16.776 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/radio_heads/.vscode-server/extensions
+2025-10-10 10:40:17.170 [info] [<unknown>][5df04c87][ExtensionHostConnection] New connection established.
+2025-10-10 10:40:17.170 [info] [<unknown>][f26d1cab][ManagementConnection] New connection established.
+2025-10-10 10:40:17.283 [info] [<unknown>][5df04c87][ExtensionHostConnection] <2862251> Launched Extension Host Process.
+2025-10-10 10:40:48.695 [info] Downloaded extension to file:///home/radio_heads/.vscode-server/data/CachedExtensionVSIXs/82b0535e-115b-4b78-af20-8a9a27402bd6
+2025-10-10 10:40:48.708 [info] Installing extension: github.copilot-chat {"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"}}
+2025-10-10 10:40:48.822 [info] Getting Manifest... github.copilot
+2025-10-10 10:40:48.842 [info] Installing extension: github.copilot {"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false,"context":{"dependecyOrPackExtensionInstall":true}}
+2025-10-10 10:40:49.128 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5: github.copilot-chat
+2025-10-10 10:40:49.145 [info] Renamed to /home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5
+2025-10-10 10:40:49.989 [info] Extension signature verification result for github.copilot: Success. Internal Code: 0. Executed: true. Duration: 832ms.
+2025-10-10 10:40:50.428 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/github.copilot-1.372.0: github.copilot
+2025-10-10 10:40:50.434 [info] Renamed to /home/radio_heads/.vscode-server/extensions/github.copilot-1.372.0
+2025-10-10 10:40:50.442 [info] Extension installed successfully: github.copilot-chat file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:40:50.442 [info] Extension installed successfully: github.copilot file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:41:00.518 [info] [<unknown>][f26d1cab][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-10-10 10:41:00.614 [info] [<unknown>][5df04c87][ExtensionHostConnection] <2862251> Extension Host Process exited with code: 0, signal: null.
+2025-10-10 10:41:00.614 [info] Cancelling previous shutdown timeout
+2025-10-10 10:41:00.614 [info] Last EH closed, waiting before shutting down
+2025-10-10 10:41:01.974 [info] [<unknown>][c95b2aee][ManagementConnection] New connection established.
+2025-10-10 10:41:01.974 [info] [<unknown>][20e8b801][ExtensionHostConnection] New connection established.
+2025-10-10 10:41:01.979 [info] [<unknown>][20e8b801][ExtensionHostConnection] <2862904> Launched Extension Host Process.
+2025-10-10 10:42:19.024 [info] Getting Manifest... ms-toolsai.jupyter
+2025-10-10 10:42:19.046 [info] Getting Manifest... ms-python.python
+2025-10-10 10:42:19.048 [info] Installing extension: ms-toolsai.jupyter {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64"},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"}}
+2025-10-10 10:42:19.088 [info] Installing extension: ms-python.python {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64"},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"}}
+2025-10-10 10:42:19.160 [info] Getting Manifest... ms-python.vscode-python-envs
+2025-10-10 10:42:19.165 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2025-10-10 10:42:19.166 [info] Getting Manifest... ms-python.debugpy
+2025-10-10 10:42:19.168 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2025-10-10 10:42:19.173 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2025-10-10 10:42:19.175 [info] Getting Manifest... ms-python.vscode-pylance
+2025-10-10 10:42:19.176 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2025-10-10 10:42:19.180 [info] Installing extension: ms-toolsai.jupyter-renderers {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64","dependecyOrPackExtensionInstall":true},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false}
+2025-10-10 10:42:19.180 [info] Installing extension: ms-toolsai.jupyter-keymap {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64","dependecyOrPackExtensionInstall":true},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false}
+2025-10-10 10:42:19.180 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64","dependecyOrPackExtensionInstall":true},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false}
+2025-10-10 10:42:19.180 [info] Installing extension: ms-toolsai.vscode-jupyter-slideshow {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64","dependecyOrPackExtensionInstall":true},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false}
+2025-10-10 10:42:19.183 [info] Installing extension: ms-python.vscode-python-envs {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64","dependecyOrPackExtensionInstall":true},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false}
+2025-10-10 10:42:19.183 [info] Installing extension: ms-python.debugpy {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64","dependecyOrPackExtensionInstall":true},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false}
+2025-10-10 10:42:19.183 [info] Installing extension: ms-python.vscode-pylance {"installPreReleaseVersion":false,"donotVerifySignature":false,"context":{"clientTargetPlatform":"darwin-arm64","dependecyOrPackExtensionInstall":true},"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"},"pinned":false,"installGivenVersion":false}
+2025-10-10 10:42:20.130 [info] Extension signature verification result for ms-toolsai.jupyter-keymap: Success. Internal Code: 0. Executed: true. Duration: 572ms.
+2025-10-10 10:42:20.137 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.2: ms-toolsai.jupyter-keymap
+2025-10-10 10:42:20.138 [info] Extension signature verification result for ms-toolsai.vscode-jupyter-slideshow: Success. Internal Code: 0. Executed: true. Duration: 572ms.
+2025-10-10 10:42:20.140 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-keymap-1.1.2
+2025-10-10 10:42:20.151 [info] Extension signature verification result for ms-toolsai.vscode-jupyter-cell-tags: Success. Internal Code: 0. Executed: true. Duration: 578ms.
+2025-10-10 10:42:20.160 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.6: ms-toolsai.vscode-jupyter-slideshow
+2025-10-10 10:42:20.163 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.6
+2025-10-10 10:42:20.171 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.9: ms-toolsai.vscode-jupyter-cell-tags
+2025-10-10 10:42:20.174 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.9
+2025-10-10 10:42:20.216 [info] Extension signature verification result for ms-toolsai.jupyter: Success. Internal Code: 0. Executed: true. Duration: 598ms.
+2025-10-10 10:42:20.307 [info] Extension signature verification result for ms-toolsai.jupyter-renderers: Success. Internal Code: 0. Executed: true. Duration: 761ms.
+2025-10-10 10:42:20.314 [info] Extension signature verification result for ms-python.vscode-python-envs: Success. Internal Code: 0. Executed: true. Duration: 736ms.
+2025-10-10 10:42:20.353 [info] Extension signature verification result for ms-python.debugpy: Success. Internal Code: 0. Executed: true. Duration: 743ms.
+2025-10-10 10:42:20.355 [info] Extension signature verification result for ms-python.python: Success. Internal Code: 0. Executed: true. Duration: 762ms.
+2025-10-10 10:42:20.488 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-python.vscode-python-envs-1.8.0-linux-x64: ms-python.vscode-python-envs
+2025-10-10 10:42:20.499 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-python.vscode-python-envs-1.8.0-linux-x64
+2025-10-10 10:42:20.531 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-renderers-1.3.0: ms-toolsai.jupyter-renderers
+2025-10-10 10:42:20.539 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-renderers-1.3.0
+2025-10-10 10:42:20.568 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Internal Code: 0. Executed: true. Duration: 653ms.
+2025-10-10 10:42:20.614 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831: ms-toolsai.jupyter
+2025-10-10 10:42:20.630 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831
+2025-10-10 10:42:20.642 [info] Extension installed successfully: ms-toolsai.jupyter-keymap file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:20.642 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-slideshow file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:20.642 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:20.642 [info] Extension installed successfully: ms-toolsai.jupyter-renderers file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:20.642 [info] Extension installed successfully: ms-toolsai.jupyter file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:20.774 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-python.debugpy-2025.14.0-linux-x64: ms-python.debugpy
+2025-10-10 10:42:20.786 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-python.debugpy-2025.14.0-linux-x64
+2025-10-10 10:42:21.291 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-python.python-2025.16.0-linux-x64: ms-python.python
+2025-10-10 10:42:21.351 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-python.python-2025.16.0-linux-x64
+2025-10-10 10:42:22.915 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/ms-python.vscode-pylance-2025.8.3: ms-python.vscode-pylance
+2025-10-10 10:42:23.119 [info] Renamed to /home/radio_heads/.vscode-server/extensions/ms-python.vscode-pylance-2025.8.3
+2025-10-10 10:42:23.138 [info] Extension installed successfully: ms-python.vscode-python-envs file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:23.139 [info] Extension installed successfully: ms-python.debugpy file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:23.139 [info] Extension installed successfully: ms-python.python file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:42:23.139 [info] Extension installed successfully: ms-python.vscode-pylance file:///home/radio_heads/.vscode-server/extensions/extensions.json
+2025-10-10 10:46:00.615 [info] New EH opened, aborting shutdown
+2025-10-10 11:02:29.890 [info] Getting Manifest... mechatroner.rainbow-csv
+2025-10-10 11:02:29.907 [info] Installing extension: mechatroner.rainbow-csv {"isMachineScoped":false,"isApplicationScoped":false,"profileLocation":{"$mid":1,"fsPath":"/home/radio_heads/.vscode-server/extensions/extensions.json","external":"file:///home/radio_heads/.vscode-server/extensions/extensions.json","path":"/home/radio_heads/.vscode-server/extensions/extensions.json","scheme":"file"},"productVersion":{"version":"1.104.3","date":"2025-10-02T12:30:51.747Z"}}
+2025-10-10 11:02:30.770 [info] Extension signature verification result for mechatroner.rainbow-csv: Success. Internal Code: 0. Executed: true. Duration: 571ms.
+2025-10-10 11:02:30.808 [info] Extracted extension to file:///home/radio_heads/.vscode-server/extensions/mechatroner.rainbow-csv-3.23.0: mechatroner.rainbow-csv
+2025-10-10 11:02:30.815 [info] Renamed to /home/radio_heads/.vscode-server/extensions/mechatroner.rainbow-csv-3.23.0
+2025-10-10 11:02:30.828 [info] Extension installed successfully: mechatroner.rainbow-csv file:///home/radio_heads/.vscode-server/extensions/extensions.json

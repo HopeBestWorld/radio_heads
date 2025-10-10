@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: torch-workflow-archiver
+Version: 0.2.15
+Summary: Torch Workflow Archiver is used for creating archives of workflow designed using trained neural net models that can be consumed by TorchServe inference
+Home-page: https://github.com/pytorch/serve/blob/master/workflow-archiver/
+Author: PyTorch Serving team
+Author-email: noreply@noreply.com
+License: Apache License Version 2.0
+Keywords: TorchServe Torch Workflow Archive Archiver Server Serving Deep Learning Inference AI
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Project Description
+===================
+
+Torch Workflow Archiver is a tool used for creating archives of workflow designed using trained neural net models that can be consumed by TorchServe inference.
+
+Use the Torch Workflow Archiver CLI to create a ``.war`` file.
+
+Torch Workflow Archiver is part of `TorchServe <https://pypi.org/project/torchserve/>`__.
+However, you can install Torch Workflow Archiver stand alone.
+
+Detailed documentation and examples are provided in the `README
+<https://github.com/pytorch/serve/blob/master/workflow-archiver/README.md>`__.
+
+
+Installation
+------------
+
+::
+
+    pip install torch-workflow-archiver
+
+Source code
+-----------
+
+You can check the latest source code as follows:
+
+::
+
+    git clone https://github.com/pytorch/serve.git
+
+
+Citation
+--------
+
+If you use TorchServe in a publication or project, please cite TorchServe:
+https://github.com/pytorch/serve

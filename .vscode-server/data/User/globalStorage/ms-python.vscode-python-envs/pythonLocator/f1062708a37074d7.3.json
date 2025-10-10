@@ -1,0 +1,12 @@
+{
+  "environment": {
+    "executable": "/usr/local/bin/python3.12",
+    "prefix": "/usr/local",
+    "version": "3.12.10.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "/usr/local/bin/python3.12"
+    ]
+  },
+  "symlinks": []
+}

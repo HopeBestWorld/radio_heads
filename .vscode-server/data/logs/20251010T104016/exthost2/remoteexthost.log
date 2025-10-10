@@ -1,0 +1,288 @@
+2025-10-10 10:41:03.085 [info] Extension host with pid 2862904 started
+2025-10-10 10:41:03.091 [info] Lock '/home/radio_heads/.vscode-server/data/User/workspaceStorage/5663ec6c0b9cd1ee67cfbcc67da1bd90/vscode.lock': Lock acquired.
+2025-10-10 10:41:04.547 [info] Eager extensions activated
+2025-10-10 10:41:05.431 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-10-10 10:41:05.432 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: false, activationEvent: '*', root cause: vscode.git
+2025-10-10 10:41:05.432 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-10-10 10:41:05.432 [info] ExtensionService#_doActivateExtension GitHub.copilot, startup: false, activationEvent: 'onStartupFinished'
+2025-10-10 10:41:05.432 [info] ExtensionService#_doActivateExtension GitHub.copilot-chat, startup: false, activationEvent: 'onStartupFinished'
+2025-10-10 10:41:07.955 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: '*'
+2025-10-10 10:41:07.955 [info] ExtensionService#_doActivateExtension vscode.github, startup: false, activationEvent: '*'
+2025-10-10 10:41:20.299 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-10-10 10:42:21.883 [info] ExtensionService#_doActivateExtension ms-toolsai.vscode-jupyter-slideshow, startup: false, activationEvent: 'onNotebook:jupyter-notebook'
+2025-10-10 10:42:21.883 [info] ExtensionService#_doActivateExtension ms-toolsai.vscode-jupyter-cell-tags, startup: false, activationEvent: 'onNotebook:jupyter-notebook'
+2025-10-10 10:42:21.883 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2025-10-10 10:42:23.673 [error] TypeError: this.vscNotebook.onDidChangeNotebookCellExecutionState is not a function
+    at new Rk (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:24:501992)
+    at f (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:544315)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:546205
+    at t.resolveInstance (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:546232)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:549264
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:549601
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548924
+    at v (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548956)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548818
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548752
+    at Array.map (<anonymous>)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548724
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:545563
+    at Array.reduce (<anonymous>)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:545535
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:545862
+    at t.resolveInstance (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:546232)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:549264
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:549601
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548924
+    at v (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548956)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:548818
+    at t.resolve (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:550788)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:519761
+    at e._get (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:519130)
+    at e._getButThrowIfAsync (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:519190)
+    at e.get (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:2:514885)
+    at up.get (/home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:17:36027)
+    at /home/radio_heads/.vscode-server/extensions/ms-toolsai.jupyter-2023.8.1002501831/out/extension.node.js:24:650173
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-10-10 10:42:23.687 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2025-10-10 10:42:24.014 [info] ExtensionService#_doActivateExtension ms-python.vscode-python-envs, startup: false, activationEvent: 'onLanguage:python'
+2025-10-10 10:42:24.014 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
+2025-10-10 10:42:25.799 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-10-10 10:42:27.241 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2025-10-10 10:42:27.413 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-10 10:42:27.553 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-10 10:42:27.556 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-10 10:42:27.556 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-10 10:42:27.558 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-10 10:42:27.595 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-10 10:42:27.829 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-10-10 10:42:27.829 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-10-10 10:42:27.829 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-10-10 10:47:29.704 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 10:48:28.536 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onTerminalQuickFixRequest:ms-vscode.npm-command'
+2025-10-10 10:48:34.883 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2025-10-10 10:52:31.279 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 10:57:33.018 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:02:34.664 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:02:35.298 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:plaintext'
+2025-10-10 11:07:36.172 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:12:37.701 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:16:43.649 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:16:43.672 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:16:43.717 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:16:44.510 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:17:39.249 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:22:40.772 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:23:51.545 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:23:51.600 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:23:51.694 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:23:52.399 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:23:52.508 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:23:52.914 [warning] GitHub.copilot-chat - Code actions of kind 'quickfix' requested but returned code action is of kind 'refactor.rewrite.review.copilot'. Code action will be dropped. Please check 'CodeActionContext.only' to only return requested code actions.
+2025-10-10 11:27:42.314 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:32:43.929 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:37:45.555 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:42:47.138 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:47:48.746 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:52:50.284 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 11:57:51.899 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 12:02:53.426 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 12:03:55.258 [error] Error: e is not iterable
+
+TypeError: e is not iterable
+    at _ce.setItems (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:16712)
+    at bl._computeFn (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:16443)
+    at bl._recompute (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:8784)
+    at bl.get (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:8118)
+    at bl.reportChanges (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:466)
+    at Ece.endUpdate (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:16225)
+    at gut (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:15943)
+    at bl.recomputeInitiallyAndOnChange (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:463:1060)
+    at Gk.init (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:1378:1822)
+    at Timeout._onTimeout (/home/radio_heads/.vscode-server/extensions/github.copilot-chat-0.31.5/dist/extension.js:427:12)
+    at listOnTimeout (node:internal/timers:588:17)
+    at processTimers (node:internal/timers:523:7)
+2025-10-10 12:03:55.702 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-10-10 12:03:56.843 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-10-10 12:04:28.257 [warning] DiagnosticCollection with name 'pylance' does already exist.
+2025-10-10 12:06:56.213 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10001
+2025-10-10 12:07:57.057 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 12:09:57.230 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10001
+2025-10-10 12:12:59.218 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)
+2025-10-10 12:14:44.863 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10003
+2025-10-10 12:15:25.320 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-10-10 12:16:52.484 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-10-10 12:16:59.535 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-10-10 12:17:00.348 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-10-10 12:17:46.549 [warning] [Decorations] CAPPING events from decorations provider vscode.git 10000
+2025-10-10 12:18:03.267 [error] TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/request.js:301:27)
+    at Object.errorRequest (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/core/util.js:836:13)
+    at Socket.onHttpSocketClose (/home/radio_heads/.vscode-server/cli/servers/Stable-385651c938df8a906869babee516bffd0ddb9829/server/node_modules/undici/lib/dispatcher/client-h1.js:939:10)
+    at Socket.emit (node:events:530:35)
+    at TCP.<anonymous> (node:net:346:12)

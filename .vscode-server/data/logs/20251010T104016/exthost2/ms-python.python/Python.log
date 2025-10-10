@@ -1,0 +1,54 @@
+2025-10-10 10:42:25.796 [info] Native locator: Refresh started
+2025-10-10 10:42:25.859 [info] > pyenv which python
+2025-10-10 10:42:25.859 [info] cwd: .
+2025-10-10 10:42:26.261 [info] Native locator: Refresh finished in 466 ms
+2025-10-10 10:42:26.263 [info] Send text to terminal: source /home/radio_heads/radio_env/bin/activate
+2025-10-10 10:42:26.544 [info] Active interpreter [/home/radio_heads]:  /home/radio_heads/radio_env/bin/python
+2025-10-10 10:42:26.545 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads
+2025-10-10 10:42:27.303 [info] Starting Pylance language server.
+2025-10-10 10:42:27.970 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/.vscode-server/data/Machine/settings.json
+2025-10-10 10:42:28.852 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/.vscode-server/data/Machine/settings.json
+2025-10-10 10:42:32.287 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/.vscode-server/data/Machine/settings.json
+2025-10-10 10:43:10.131 [info] Send text to terminal: source /home/radio_heads/radio_env/bin/activate
+2025-10-10 10:48:41.153 [info] Send text to terminal: source /home/radio_heads/radio_env/bin/activate
+2025-10-10 10:53:11.431 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 10:53:13.229 [info] Send text to terminal: source /home/radio_heads/radio_env/bin/activate
+2025-10-10 10:53:13.229 [info] Send text to terminal: /home/radio_heads/radio_env/bin/python /home/radio_heads/pcos.py
+
+2025-10-10 10:54:45.878 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 10:56:24.568 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:02:18.974 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:08:45.868 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:09:45.967 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:11:13.540 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:11:44.819 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:14:08.165 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:14:11.313 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:14:47.289 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:15:28.383 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:15:38.997 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:16:42.852 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:16:46.338 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:18:18.944 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:19:35.537 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:19:45.893 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:21:45.410 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:21:52.938 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:21:59.755 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:23:54.387 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:25:03.458 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:25:14.600 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:33:42.688 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:33:44.408 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:34:05.934 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:34:10.537 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:40:39.682 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:40:53.199 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:40:58.303 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:40:58.937 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:41:04.856 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:44:04.166 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:48:03.641 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:50:28.799 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 11:55:29.101 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
+2025-10-10 12:03:45.918 [info] Send text to terminal: source /home/radio_heads/radio_env/bin/activate
