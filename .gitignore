@@ -1,0 +1,23 @@
+# Ignore datasets and outputs
+.vscode-server
+.cache
+radio_env
+train/
+test/
+*.pt
+*.pkl
+*.ckpt
+__pycache__/
+logs/
+*.csv
+*.xlsx
+*.zip
+*.tar
+*.nii
+*.npy
+*.npz
+
+# Jupyter and cache
+.ipynb_checkpoints/
+*.ipynb
+.DS_Store
