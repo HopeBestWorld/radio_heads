@@ -1,3 +1,0 @@
-"""
-Util files for TorchServe
-"""
