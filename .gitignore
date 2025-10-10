@@ -36,6 +36,8 @@ __pycache__/
 .bashrc
 .gitconfig
 .wget-hsts
+*.pub
+id_ed25519
 
 # CUDA / Large binaries
 *.so
