@@ -229,6 +229,10 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, num_epoch
     best_model_path = 'best_model.pkl'
     epochs_no_improve = 0
 
+    # Lists to store metrics per epoch
+    train_acc_list = []
+    val_acc_list = []
+
     for epoch in range(num_epochs):
         model.train()
         running_loss, correct, total = 0.0, 0, 0
@@ -248,8 +252,10 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, num_epoch
 
         train_loss = running_loss / len(train_loader.dataset)
         train_acc = correct / total
+        train_acc_list.append(train_acc)
 
         val_acc, val_prec, val_recall, val_f1, val_auc, _, _ = evaluate_model(model, val_loader)
+        val_acc_list.append(val_acc)
 
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {train_loss:.4f}, '
               f'Train Acc: {train_acc:.4f}, Val Acc: {val_acc:.4f}, '
@@ -266,6 +272,18 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, num_epoch
             if epochs_no_improve >= patience:
                 print(f"⏹ Early stopping triggered after {patience} epochs without improvement.")
                 break
+
+    # Plot and save accuracy curve
+    plt.figure(figsize=(8, 6))
+    plt.plot(train_acc_list, label='Train Accuracy')
+    plt.plot(val_acc_list, label='Validation Accuracy')
+    plt.xlabel('Epoch')
+    plt.ylabel('Accuracy')
+    plt.title('Training & Validation Accuracy Over Epochs')
+    plt.legend()
+    plt.grid(True)
+    plt.savefig("accuracy_curve.png", dpi=300, bbox_inches='tight')
+    plt.show()
 
 # -------------------------
 # Train the model
