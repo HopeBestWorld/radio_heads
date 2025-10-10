@@ -52,3 +52,4 @@
 2025-10-10 11:50:28.799 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
 2025-10-10 11:55:29.101 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos.py
 2025-10-10 12:03:45.918 [info] Send text to terminal: source /home/radio_heads/radio_env/bin/activate
+2025-10-10 12:49:20.851 [info] Discover tests for workspace name: radio_heads - uri: /home/radio_heads/pcos_zenedo.py

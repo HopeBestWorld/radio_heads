@@ -1,7 +1,7 @@
 # Ignore datasets and outputs
-.vscode-server
-.cache
-radio_env
+.vscode-server/
+.cache/
+radio_env/
 train/
 test/
 *.pt
@@ -16,8 +16,34 @@ logs/
 *.nii
 *.npy
 *.npz
+*.json
+*.log
+.env/
+venv/
+*.egg-info/
+pip-wheel-metadata/
+__pycache__/
+.bash_history
+.config/
+.dotnet/
+.ipython/
+.jupyter/
+.local/
+.npm/
+.nv/
+.ssh/
+.bash_logout
+.bashrc
+.gitconfig
+.wget-hsts
+
+# CUDA / Large binaries
+*.so
+*.dll
 
 # Jupyter and cache
 .ipynb_checkpoints/
 *.ipynb
 .DS_Store
+
+
